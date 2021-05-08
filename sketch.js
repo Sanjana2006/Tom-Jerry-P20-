@@ -19,12 +19,18 @@ function setup(){
     createCanvas(1100,800);
     //create tom and jerry sprites here
     catTom = createSprite(1000, 700);
-    catTom.addImage(catImg);
     catTom.scale = 0.13;
 
+    catTom.addAnimation("catSitting", catImg);
+    catTom.changeAnimation("catSitting");
+
     mouseJerry = createSprite(80,700);
-    mouseJerry.addImage(mouseImg);
     mouseJerry.scale = 0.12;
+
+    mouseJerry.addAnimation("mouseStanding", mouseImg);
+    mouseJerry.changeAnimation("mouseStanding");
+
+    
 }
 
 function draw() {
@@ -35,7 +41,7 @@ function draw() {
     {
         catTom.velocityX = 0;
         
-        catTom. addAnimation("happyCat", catImg1)
+        catTom.addAnimation("happyCat", catImg1)
         catTom.changeAnimation("happyCat");
         catTom.x = 200;
         catTom.y = 680;
