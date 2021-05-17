@@ -5,11 +5,11 @@ function preload() {
     //load the images here
     bgImg = loadImage("images/garden.png");
     
-    catImg = loadImage("images/cat1.png");
-    mouseImg = loadImage("images/mouse1.png");
+    catImg = loadAnimation("images/cat1.png");
+    mouseImg = loadAnimation("images/mouse1.png");
 
-    catImg1 = loadImage("images/cat4.png");
-    mouseImg1 = loadImage("images/mouse4.png");
+    catImg1 = loadAnimation("images/cat4.png");
+    mouseImg1 = loadAnimation("images/mouse4.png");
 
     catMovingImg = loadAnimation("images/cat2.png", "images/cat3.png");
     mouseMovingImg = loadAnimation("images/mouse2.png", "images/mouse3.png");
